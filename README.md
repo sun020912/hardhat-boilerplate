@@ -1,5 +1,7 @@
 # Hardhat Boilerplate
 
+This is a fork of [hardhat-boilerplate](https://github.com/NomicFoundation/hardhat-boilerplate/).
+
 This repository contains a sample project that you can use as the starting point
 for your Ethereum project. It's also a great fit for learning the basics of
 smart contract development.
@@ -44,6 +46,14 @@ npm start
 Open [http://localhost:3000/](http://localhost:3000/) to see your Dapp. You will
 need to have [Coinbase Wallet](https://www.coinbase.com/wallet) or [Metamask](https://metamask.io) installed and listening to
 `localhost 8545`.
+
+Run a custom Hardhat task that uses the balance of the deploying account to send **100 MST** and **1 ETH** to your address.
+
+```
+npx hardhat --network localhost faucet <your address>
+```
+
+This will allow you to send tokens to another address.
 
 ## User Guide
 
